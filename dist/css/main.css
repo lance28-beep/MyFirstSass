@@ -27,6 +27,10 @@
   font-weight: 700;
 }
 
+.txt-type > .txt {
+  border-right: 0.2rem solid #83e85a;
+}
+
 .menu-btn {
   position: absolute;
   z-index: 1;
