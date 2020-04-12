@@ -18,3 +18,22 @@ $secondary-color: #83e85a;
     @return #fff;
   }
 }
+
+//for size screen
+@mixin media-md { //medium
+  @media screen and(min-width:768px) {
+    @content;
+  } 
+}
+
+@mixin media-lg { //large
+  @media screen and(min-width:1024px) {
+    @content;
+  } 
+}
+
+@mixin media-xl { //extra large
+  @media screen and(min-width:1600px) {
+    @content;
+  } 
+}
