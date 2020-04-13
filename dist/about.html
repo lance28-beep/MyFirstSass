@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="./css/main.css" />
     <title>About Lance Valle</title>
   </head>
-  <body>
-    <header>
+  <body>   
+    <header id="particles-js" style="z-index: 0">
       <div class="menu-btn">
         <span class="menu-btn__burger"></span>
       </div>
@@ -32,19 +32,36 @@
         <section class="about">
             <div class="about__bio-image">
                 <div class="about__bio">
-                    <h2 class="text-secondary">BIO</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus vitae animi laboriosam libero, illum illo omnis quas optio minima, tempore consequuntur debitis, nostrum sequi! Molestiae, minima perferendis? Cupiditate, nostrum at!</p>
+                  <h2>
+                    <span class="txt-type" data-wait="3000" 
+                    data-words='["About Me:  ","Let me tell you about my self:  ","Hello!  "]'></span>
+                </h2>
+                    <p>I am a self-taught full-stack developer,continued learning on my own.I am pursuing the opportunity to begin my 
+                      carrer in the web development industry.
+                      My main focus has mostly been on front-web development
+                      I am currently employed as an SAP Database Operator.
+                      I injoy learning new skills and expanding on skills I already have.I hope to go back
+                      to school in the near future to complete the necessary courses required to received 
+                      a degree in Computer Programming.
+                    </p>
                 </div>
             </div>
             <div class="jobs">
                 <div class="jobs__job">
-                    <h2 class="text-secondary">2020 - current</h2>
-                    <h3>Google</h3>
-                    <h6>Full Stack Developer</h6>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sapiente eos architecto quasi voluptate quaerat repellendus magni consequatur asperiores aspernatur.
-                    </p>
+                    <h2 class="text-secondary">Skills</h2>
+                    <h3>HTML</h3><progress max="100" value="95"></progress>
+                    <h6>HTML5</h6>
+                    <h3>CSS</h3><progress max="100" value="80"></progress>
+                    <h6>CSS3 / SASS </h6>
+                    <h3>Javascript</h3><progress max="100" value="90"></progress>
+                    <h6>Vanilla Javascript / EcmaScript </h6>
+                    <h3>Frameworks/ Libraries</h3><progress max="100" value="90"></progress>
+                    <h6>bootstrap / animate.js / Jquery / particles.js .etc </h6>
+                    <!-- <h6>Full Stack Developer</h6> -->
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sapiente eos architecto quasi voluptate quaerat repellendus magni consequatur asperiores aspernatur.
+                    </p> -->
                 </div>
-                <div class="jobs__job">
+                <!-- <div class="jobs__job">
                     <h2 class="text-secondary">2015 - 2017</h2>
                     <h3>Microsoft</h3>
                     <h6>Full Stack Developer</h6>
@@ -57,10 +74,8 @@
                     <h6>Graphic Designer</h6>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sapiente eos architecto quasi voluptate quaerat repellendus magni consequatur asperiores aspernatur.
                     </p>
-                </div>
+                </div> -->
             </div>
-
-
             <div class="social-icons">
             <a class="twitter" id="profile-link" target="_blank" href="https://twitter.com/valle_lance"><i class="fab fa-twitter fa-2x"></i></a>
             <a class="github" id="profile-link" target="_blank" href="https://github.com/lance28-beep"><i class="fab fa-github fa-2x"></i></a>
@@ -69,10 +84,16 @@
             <a class="Gmail" id="profile-link" target="_blank" href=vallelance8@gmail.com"><i class="fab fa-google fa-2x"></i></a>
             <a class="CodeCamp" id="profile-link" target="_blank" href="https://www.freecodecamp.org/vallelance"><i class="fab fa-free-code-camp fa-2x"></i></a>
             <a class="Facebook" id="profile-link" target="_blank" href="https://www.facebook.com/mr.c0oletz"><i class="fab fa-facebook-f fa-2x"></i></a>
+        </div>
             <footer>&copy; Copyright 2020</footer>
          </section>
     </main>
   </body>
   <script src="https://kit.fontawesome.com/216fe96c42.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'js/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });</script>
   <script src="js/main.js"></script>
 </html>

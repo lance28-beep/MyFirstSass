@@ -19,7 +19,6 @@
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #fff;
 }
 
 .home__name--last {
@@ -195,13 +194,22 @@
   gap: 2rem;
 }
 
+.about .jobs progress {
+  /* Reset the default appearance */
+  appearance: none;
+  width: 90%;
+  height: 20px;
+  background-color: #83e85a;
+}
+
 .about .jobs__job {
   background-color: #416649;
   padding: 0.5rem;
   border-bottom: 5px solid #83e85a;
 }
 
-.about .jobs__job h2, .about .jobs__job h3 {
+.about .jobs__job h2,
+.about .jobs__job h3 {
   margin: 0.5rem 0;
 }
 
@@ -334,6 +342,7 @@
 .contact .social-icons {
   position: initial;
   margin-top: 2rem;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -347,15 +356,15 @@
     display: block;
     transform: translateY(0);
     height: 100%;
-    background: transparent;
+    background: rgba(45, 71, 51, 0.4);
     text-align: right;
   }
   .nav .menu-nav__item {
     display: inline;
-    padding-right: 1.5rem;
+    padding-right: 1rem;
   }
   .nav .menu-nav__link {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .about__bio {
     font-size: 1.5rem;

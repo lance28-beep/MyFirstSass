@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>Contact Lance Valle</title>
   </head>
   <body>
-    <header>
+    <header id="particles-js" style="z-index: 0">
       <div class="menu-btn">
         <span class="menu-btn__burger"></span>
       </div>
@@ -31,14 +33,15 @@
     <main>
         <section class="home">
             <h2>Hi! My Name Is</h2>
-            <h1 class="home__name">
+            <h1 class="home__name animated heartBeat infinite">
                 Lance <span class="home__name--last">Valle</span>
             </h1>
             <h2>
-                Aspiring full-stack web 
-                <span class="txt-type" data-wait="3000" 
-                data-words='["Developer ","Designer ","Creator "]'></span>
-            </h2>
+              Aspiring full-stack web 
+              <span class="txt-type" data-wait="3000" 
+              data-words='["Developer ","Designer ","Creator "]'></span>
+          </h2>
+        </div>
             <div class="social-icons">
             <a class="twitter" id="profile-link" target="_blank" href="https://twitter.com/valle_lance"><i class="fab fa-twitter fa-2x"></i></a>
             <a class="github" id="profile-link" target="_blank" href="https://github.com/lance28-beep"><i class="fab fa-github fa-2x"></i></a>
@@ -47,10 +50,15 @@
             <a class="Gmail" id="profile-link" target="_blank" href=vallelance8@gmail.com"><i class="fab fa-google fa-2x"></i></a>
             <a class="CodeCamp" id="profile-link" target="_blank" href="https://www.freecodecamp.org/vallelance"><i class="fab fa-free-code-camp fa-2x"></i></a>
             <a class="Facebook" id="profile-link" target="_blank" href="https://www.facebook.com/mr.c0oletz"><i class="fab fa-facebook-f fa-2x"></i></a>
-            <footer>&copy; Copyright 2020</footer>
+            <footer>&copy; Copyright 2020</footer>   
          </section>
     </main>
   </body>
   <script src="https://kit.fontawesome.com/216fe96c42.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'js/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });</script>
   <script src="js/main.js"></script>
 </html>

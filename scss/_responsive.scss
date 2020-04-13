@@ -9,16 +9,15 @@
       display: block;
       transform: translateY(0);
       height: 100%;
-      background: transparent;
+      background: rgba($primary-color, $alpha: 0.4);
       text-align: right;
-
       &__item {
         display: inline;
-        padding-right: 1.5rem;
+        padding-right: 1rem;
       }
 
       &__link {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
     }
   }
