@@ -40,6 +40,9 @@
   }
 }
 @include media-lg {
+  header {
+    z-index: 1;
+  }
   .projects {
     &__items {
       grid-template-columns: repeat(3, 1fr);
@@ -48,11 +51,13 @@
   .contact__list {
     grid-template-columns: repeat(3, 1fr);
   }
+  .social-icons {
+    z-index: 1;
+  }
 }
 
 @include media-xl {
-  .projects__bio-image{
-  height: 5vh;
+  .projects__bio-image {
+    height: 5vh;
+  }
 }
-}
-

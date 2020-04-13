@@ -32,7 +32,7 @@
 
 .menu-btn {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   right: 1rem;
   top: 1rem;
   height: 20px;
@@ -384,11 +384,17 @@
 }
 
 @media screen and (min-width: 1024px) {
+  header {
+    z-index: 1;
+  }
   .projects__items {
     grid-template-columns: repeat(3, 1fr);
   }
   .contact__list {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .social-icons {
+    z-index: 1;
   }
 }
 
@@ -423,7 +429,7 @@ a {
 
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   padding: 1rem;
 }
